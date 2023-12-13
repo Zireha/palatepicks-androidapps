@@ -7,7 +7,6 @@
     android:background="#FFE9BA"
     tools:context=".ui.homepage.MainActivity">
 
-
     <ImageView
         android:id="@+id/ellipseltbrown"
         android:layout_width="849dp"
@@ -33,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.65999997" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -79,12 +78,48 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <SearchView
-        android:layout_width="754dp"
-        android:layout_height="8dp"
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="380dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/shape_round_corner"
+        android:backgroundTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/tv_recommendation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_query"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_round_corner"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/poppins"
+                android:gravity="center|start"
+                android:hint="Mau ke kafe mana hari ini?"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="34dp"
+            android:layout_height="31dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:contentDescription=""
+            android:src="@drawable/ic_search" />
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
