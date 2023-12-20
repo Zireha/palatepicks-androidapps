@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Palatepicks</string>
     <string name="search_hint">Mau ke kafe mana hari ini?</string>
+    <string name="default_web_client_id">1097170907669-7ao7nj075v23d4oru64pi93l8jlt7dh4.apps.googleusercontent.com</string>
 </resources>

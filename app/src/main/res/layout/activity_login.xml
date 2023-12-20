@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.9"
         app:srcCompat="@drawable/ellipsebrown" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -88,10 +88,10 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="170dp"
-        android:layout_height="44dp"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:background="#945F23"
+        android:backgroundTint="#935F23"
         android:text="Masuk"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,5 +99,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout3"
         app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/signInButton"
+        android:layout_width="160dp"
+        android:layout_height="49dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/button3"-->
+<!--        android:layout_width="240dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:backgroundTint="#935F23"-->
+<!--        android:text="Masuk dengan Google"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.497"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/frameLayout3"-->
+<!--        app:layout_constraintVertical_bias="0.649" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
