@@ -22,3 +22,6 @@ gradle-app.setting
 
 #Manifest ignore
 AndroidManifest.xml
+
+#google service ignore
+google-services.json
